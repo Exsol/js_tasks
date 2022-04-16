@@ -23,7 +23,7 @@ function giveChange (total) {
   var i = 0;
   while (total > 0 && i < denominations.length) {
     var denomination = denominations[i]
-    var needed = Math.min(Math.floor(total / denomination), 10)
+    var needed = Math.min(Math.floor(total / denomination), 100)
     total -= denomination * needed
     piles[i] = needed
     i++
@@ -31,4 +31,3 @@ function giveChange (total) {
   piles.reverse();
   return piles
 }
-
