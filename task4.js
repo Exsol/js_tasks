@@ -9,3 +9,6 @@ const removeChar = str => {
     }
     return newStr
 }
+
+
+
